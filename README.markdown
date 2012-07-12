@@ -100,9 +100,9 @@ Part III. Hills
 ---------------
 
 There are also any number of hills, each with a fixed position and radius.
-These serve as goals; when the leader hedgehog reaches a goal hill, the
-troupe's quest is over, and they are free to break formation and nibble on
-clover or whatever it is that hedgehogs do for fun.
+These serve as goals; when the leader hedgehog reaches a hill, the troupe's
+quest is over, and they are free to break formation and nibble on clover or
+whatever it is that hedgehogs do for fun.
 
 Part IV. Computational Class
 ----------------------------
@@ -195,3 +195,25 @@ simulation would use real numbers to measure both duration and distance, and
 real analysis techniques to discover the evolution of the system.  Motion of
 the hedgehogs would be genuinely continuous except for the points where their
 velocities change due to one hedgehog approaching another too closely, etc.
+
+Nor have we said much about the topology of the space all of these things are
+in.  Naturally, the space could be infinite, or it could be mapped onto a
+torus so that the hedgehogs "wrap around" at the edges.  (The fact that the
+space is finite is not a problem w.r.t. Turing-completeness, so long as there
+are still an infinite number of possible coordinates, i.e. the space of real
+or rational numbers; integers, though, would be problematic in a space of
+finite extent.)  Or the space could be mapped onto the surface of a sphere,
+with appropriate modifications.
+
+We have also not constrained the sets of faery rings and hills to be finite;
+so we could have an infinite number of them in an infinite space -- but for
+correspondence with a Turing machine, these should probably be restricted to
+infinite sets.  (Otherwise, if you have, say, an uncountable set of faery
+rings, specified non-constructively, you could encode all possible
+computations just in them, and the behaviour of the hedgehogs becomes
+essentially moot.)
+
+The initial condition could either consist of the troupe having a leader
+hedgehog with an initial velocity, or a leader-elect hedgehog with an
+initially-selected faery ring to which it is attracted.  The former is
+probably more "natural" for some definition of "natural".
