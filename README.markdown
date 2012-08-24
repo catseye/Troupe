@@ -23,7 +23,7 @@ For some hedgehog X, the hedgehog to X's left and the hedgehog to X's right
 are the *neighbours* (in the USA: *neighbors*) of X.
 
 We may say that a hedgehog is "one of the hedgehogs to the left" (resp.
-"right") of some other hedgehog; the meaning of this should be evident -- it
+"right") of some other hedgehog; the meaning of this should be evident — it
 is just the transitive closure of "to its left" (resp. right).
 
 All hedgehogs share a fixed speed at which they move (when they move), and a
@@ -176,7 +176,7 @@ act as if it entered a rest area.  Also, we may require some "jitter" be
 introduced in follower hedgehog movements, lest they get stuck.
 
 We may want to go further, and allow the space itself to expand whenever a
-hedgehog is added to the troupe -- so long as all the relative directions
+hedgehog is added to the troupe — so long as all the relative directions
 between things are preserved, this should not affect the outcome.
 
 (The idea for this system came to me sort of all at once when I was thinking
@@ -206,7 +206,7 @@ finite extent.)  Or the space could be mapped onto the surface of a sphere,
 with appropriate modifications.
 
 We have also not constrained the sets of faery rings and hills to be finite;
-so we could have an infinite number of them in an infinite space -- but for
+so we could have an infinite number of them in an infinite space — but for
 correspondence with a Turing machine, these should probably be restricted to
 infinite sets.  (Otherwise, if you have, say, an uncountable set of faery
 rings, specified non-constructively, you could encode all possible
